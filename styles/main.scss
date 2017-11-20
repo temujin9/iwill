@@ -50,25 +50,3 @@ $element-border-radius: 3px;
     background: linear-gradient(to right, $gray-blue -10%, $gray);
   }
 }
-
-.reliability--status {
-  &-green {
-    background-color: $green;
-    border-color: $white-border;
-  }
-  &-blue {
-    background-color: $blue;
-  }
-  &-orange {
-    background-color: $orange;
-    border-color: $orange-border;
-  }
-  &-red {
-    background-color: $red;
-    border-color: $red-border;
-  }
-  &-gray {
-    background-color: $gray;
-    border-color: $gray-border;
-  }
-}
