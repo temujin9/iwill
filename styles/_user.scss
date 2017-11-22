@@ -1,18 +1,10 @@
 .user-promises-list {
-  .user-header {
-    margin: -1rem -1rem 1rem;
-    padding: 2rem;
-    background-color: $blue;
+  .promise-text {
+    margin: 0;
     
     a {
-      color: $white;
-      text-transform: capitalize;
-    }
-  }
-  
-  .promise-card {
-    .promise-user {
-      display: none;
+      margin: -1rem;
+      padding: 1rem;
     }
   }
 }

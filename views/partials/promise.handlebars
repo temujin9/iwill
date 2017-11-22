@@ -1,3 +1,6 @@
 <div class="promise-text">
-  {{promise.what}}{{#if promise.tdue}} <!--by {{prettyDate promise.tdue}}{{/if}}-->
+  <a href="/{{promise.urtext}}">
+    {{promise.what}}{{#if promise.tdue}} 
+    <!--by {{prettyDate promise.tdue}}{{/if}}-->
+  </a>
 </div>

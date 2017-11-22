@@ -23,11 +23,6 @@ app.use(express.static('/app/public'))
 app.engine('handlebars', expressHandlebars({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
 
-app.use(express.json());
-app.use(express.urlencoded({
-  extended: false
-}));
-
 app.listen(process.env.PORT, () => {
   console.log(`The commits.to app is running on port ${process.env.PORT}`)
 })

@@ -3,7 +3,6 @@
     background-color: $blue;
     border-radius: $card-border-radius;
     border: 1px solid $blue-border;
-    cursor: pointer;
     overflow: hidden;
     padding-bottom: 3rem;
     position: relative;
@@ -12,9 +11,14 @@
     &:hover {
       background-color: $dark-blue;
     }
-    
-    &, a {
+
+    &, a, span {
       color: white;
+    }
+
+    span {
+      font-weight: 300;
+      font-size: 50%;
     }
   }
   
@@ -30,77 +34,71 @@
     font-size: .75rem;
     font-weight: 300;
     letter-spacing: 1px;
-    opacity: .5;
-    word-break: break-all;
+    opacity: .25;
   }
 
-  &-header {
+  &-user {
     background-color: $gray-blue;
     padding: 1rem;
-    
+
+    h2, a { 
+      letter-spacing: 1px; 
+      margin: 0 0 .25rem;
+    }
+
     + .promise-bar {
       margin-top: 0;
       opacity: .5;
     }
   }
   
-  &-user {
-    letter-spacing: 1px; 
-    margin: 0 0 .25rem;
-    text-transform: capitalize;
-  }
-  
   &-details {
     padding: 1rem;
-    
-    a {
-      display: block;
-    }
   }
 
   &-domain {
     font-style: italic;
-    font-weight: 300;
-    opacity: .5;
+    font-size: 75%;
   }
 
   &-text {
-    font-size: 1.1rem;
     margin-top: .25rem;
-    text-transform: capitalize;
   }
 
   &-bar {
-    font-size: .75rem;
-    font-weight: normal;
-    letter-spacing: .25px;
+    background-color: $white;
     margin-top: 1rem;
-    opacity: .8;
-    padding: .5rem 1rem;
-    text-align: left;
-    text-transform: uppercase;
+    padding: .5rem;
     
     &--bottom {
-      background-color: $white;
       bottom: 0;
       left: 0;
-      opacity: .25;
+      opacity: .33;
       position: absolute;
-      text-align: right;
       width: 100%;
-      
-      &, a {
-        color: $dark-gray;
-      }
     }
-    
-    &--due {
-      background-color: $black; 
+
+    .promise-bar-link {
+      color: $black;
+      display: block;
+      font-size: .75rem;
+      font-weight: normal;
+      // opacity: .5;
+      text-align: center;
+      text-transform: uppercase;
+
+      &:hover {
+        
+      }
     }
 
     &--completed {
-      color: $black;
-      text-align: left;
+      background-color: $black;
+      opacity: .8;
+
+      .promise-bar-link {
+        color: $white;
+      }
     }
   }
 }
