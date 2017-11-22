@@ -17,8 +17,8 @@
     </div>-->
   </div>
   {{#if promise.tdue}}
-    <div class="promise-bar">
-      <span class="promis-bar--gcal" style="float:right">
+    <div class="promise-bar" style="min-height: 40px">
+      <span class="promis-bar--gcal" style="float: right; position: relative; z-index: 10">
         <a target="_blank"
 href="https://calendar.google.com/calendar/event?action=TEMPLATE&text={{promise.user}}%20{{promise.domain}}%20{{promise.what}}&dates={{isoDate promise.tdue}}/{{isoDate promise.tdue}}&details={{promise.id}}">
           <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif">
